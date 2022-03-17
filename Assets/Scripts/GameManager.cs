@@ -135,7 +135,7 @@ public class GameManager : MonoBehaviour
 
     void CreateEnemyPlatform()
     {
-        int which = Random.Range(0, ShiftingPlatform.Length);
+        int which = Random.Range(0,EnemyPlatform.Length);
         float randx = Random.Range(-2.75f, 2.75f);
         float randy = Random.Range(0.5f, 2.7f);
         spawnPosition.y += randy;

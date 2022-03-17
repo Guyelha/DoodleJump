@@ -46,6 +46,12 @@ public class DestroyerScript : MonoBehaviour
         if(other.GetComponent<PlayerMovement>())
         {
             lostCanvas.SetActive(true);
+           int highScore = other.GetComponent<PlayerMovement>().Score;
+            if(highScore>PlayerPrefs.GetInt("HiighScore"))
+            {
+                PlayerPrefs.SetInt("HighScore", highScore);
+            }
+
             
         }
     }

@@ -11,7 +11,12 @@ public class Enemy : MonoBehaviour
         if (other.GetComponent<PlayerMovement>())
         {
             lostCanvas.SetActive(true);
-           
+            int highScore = other.GetComponent<PlayerMovement>().Score;
+            if (highScore > PlayerPrefs.GetInt("EnemyHiighScore"))
+            {
+                PlayerPrefs.SetInt("EnemyHighScore", highScore);
+            }
+
         }
     }
 
