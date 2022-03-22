@@ -263,7 +263,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 0.89
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25151afa9b2af2e4f86cbeea06008bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lostCanvas: {fileID: 0}
+  bombSound: {fileID: 8300000, guid: 262056eece6dd3c4ea27756ed8277c18, type: 3}
 --- !u!1 &1866734388257914833
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.64
+  m_Radius: 0.47
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7370795744642893922
 MonoBehaviour:
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25151afa9b2af2e4f86cbeea06008bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lostCanvas: {fileID: 0}
+  bombSound: {fileID: 8300000, guid: 262056eece6dd3c4ea27756ed8277c18, type: 3}
 --- !u!1 &1866734388688390127
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 1.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25151afa9b2af2e4f86cbeea06008bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lostCanvas: {fileID: 0}
+  bombSound: {fileID: 8300000, guid: 262056eece6dd3c4ea27756ed8277c18, type: 3}
 --- !u!1001 &5766161197312456657
 PrefabInstance:
   m_ObjectHideFlags: 0

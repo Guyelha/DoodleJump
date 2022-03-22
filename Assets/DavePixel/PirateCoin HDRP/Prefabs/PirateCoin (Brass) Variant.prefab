@@ -41,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1850971198797605027, guid: 25cb4f9745fb8654c812036d1fee8920, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.091
+      value: -0.028
       objectReference: {fileID: 0}
     - target: {fileID: 1850971198797605027, guid: 25cb4f9745fb8654c812036d1fee8920, type: 3}
       propertyPath: m_LocalRotation.w
@@ -119,3 +119,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Coin: 0
+  coinSound: {fileID: 8300000, guid: 4ee2c22e84fd5dd4fbd51a10d6038d70, type: 3}

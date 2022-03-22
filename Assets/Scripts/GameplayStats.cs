@@ -7,15 +7,13 @@ public class GameplayStats : MonoBehaviour
 {
     public Text ScoreText;
     public Text CoinText;
-    public Text HighScoreText;
-    public Text EnemyHighScoreText;
+    
     
     public PlayerMovement playerMovement;
     // Start is called before the first frame update
     void Start()
     {
-        HighScoreText.text = "HighScore:" + PlayerPrefs.GetInt("HighScore").ToString();
-        EnemyHighScoreText.text = "EnemyHighScore:" + PlayerPrefs.GetInt("EnemyHighScore").ToString();
+       
     }
 
     // Update is called once per frame

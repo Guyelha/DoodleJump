@@ -109,3 +109,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 8.51
+  platformSound: {fileID: 8300000, guid: 5c39395379a443343b18431cdb74762c, type: 3}

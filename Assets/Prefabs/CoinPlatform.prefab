@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3042026661683984659}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.01, y: 2.491, z: -0.84}
+  m_LocalPosition: {x: -0.181, y: 2.491, z: -0.84}
   m_LocalScale: {x: 1.7065, y: 0.3775524, z: 1.9139577}
   m_Children:
   - {fileID: 8533246833523846510}
@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 8.16
+  platformSound: {fileID: 8300000, guid: 5c39395379a443343b18431cdb74762c, type: 3}
 --- !u!1001 &2457929174347053344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,7 +132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084503039713743950, guid: aaf4d10f8ca010c4bb365c4b3fd08bc7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.091
+      value: -0.028
       objectReference: {fileID: 0}
     - target: {fileID: 6084503039713743950, guid: aaf4d10f8ca010c4bb365c4b3fd08bc7, type: 3}
       propertyPath: m_LocalRotation.w

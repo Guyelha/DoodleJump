@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyerScript : MonoBehaviour
 {
-    public GameObject lostCanvas;
+    
   
     private void OnTriggerEnter(Collider other)
     {
@@ -45,11 +45,12 @@ public class DestroyerScript : MonoBehaviour
     {
         if(other.GetComponent<PlayerMovement>())
         {
-            lostCanvas.SetActive(true);
-           int highScore = other.GetComponent<PlayerMovement>().Score;
-            if(highScore>PlayerPrefs.GetInt("HiighScore"))
+
+            FindObjectOfType<GameManager>().LostGame();
+            int highScore = other.GetComponent<PlayerMovement>().Score;
+            if(highScore>PlayerPrefs.GetInt("HighScore"))
             {
-                PlayerPrefs.SetInt("HighScore", highScore);
+                PlayerPrefs.SetInt("HighScore:", highScore);
             }
 
             

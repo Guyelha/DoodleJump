@@ -10,7 +10,7 @@ public class ShiftingPlatform : MonoBehaviour
     Rigidbody platformrb;
     Vector3 platformvelo = new Vector3();
     Vector3 startpos = new Vector3();
-
+    public AudioClip platformSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +53,7 @@ public class ShiftingPlatform : MonoBehaviour
     {
         if (other.GetComponent<PlayerMovement>())
         {
+            AudioSource.PlayClipAtPoint(platformSound, transform.position, 0.7f);
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb.velocity.y < 0)
             {

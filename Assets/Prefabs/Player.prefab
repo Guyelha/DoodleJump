@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3238466993409384356}
   - component: {fileID: 7225860923138800947}
   - component: {fileID: -8017626946332574039}
+  - component: {fileID: 796032293}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -95,10 +96,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2.56
-  m_Height: 5.12
+  m_Radius: 1.40364
+  m_Height: 4.5361605
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.11649793, y: -0.3325073, z: 0.20191057}
 --- !u!114 &7225860923138800947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +115,7 @@ MonoBehaviour:
   movementPower: 10
   Score: 0
   Coin: 0
+  HighScore: 0
 --- !u!54 &-8017626946332574039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -130,3 +132,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &796032293
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305662081453834530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2688ecebf23e4262b51a1863521974f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

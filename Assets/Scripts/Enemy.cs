@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject lostCanvas;
+    public AudioClip bombSound;
 
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerMovement>())
         {
-            lostCanvas.SetActive(true);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, 0.7f);
+
+            FindObjectOfType<GameManager>().LostGame();
             int highScore = other.GetComponent<PlayerMovement>().Score;
-            if (highScore > PlayerPrefs.GetInt("EnemyHiighScore"))
+            if (highScore > PlayerPrefs.GetInt("HighScore"))
             {
-                PlayerPrefs.SetInt("EnemyHighScore", highScore);
+                PlayerPrefs.SetInt("HighScore:", highScore);
             }
 
         }
