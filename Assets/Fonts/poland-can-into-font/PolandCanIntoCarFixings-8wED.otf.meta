@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f2209d0d581a8d14daa049863d6f17a3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Poland Can Into
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b1e7755e94022714c92452953cd76741, type: 3}
+  - {fileID: 12800000, guid: b08cda4ae88d3f64bb3fffe03f396b15, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

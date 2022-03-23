@@ -43,15 +43,17 @@ public class DestroyerScript : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.GetComponent<PlayerMovement>())
+        int highScore = other.GetComponent<PlayerMovement>().Score;
+        if (highScore > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+
+        if (other.GetComponent<PlayerMovement>())
         {
 
             FindObjectOfType<GameManager>().LostGame();
-            int highScore = other.GetComponent<PlayerMovement>().Score;
-            if(highScore>PlayerPrefs.GetInt("HighScore"))
-            {
-                PlayerPrefs.SetInt("HighScore:", highScore);
-            }
+         
 
             
         }

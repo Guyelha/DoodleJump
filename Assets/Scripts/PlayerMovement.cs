@@ -27,6 +27,18 @@ public class PlayerMovement : MonoBehaviour
         int checkScore = Mathf.RoundToInt(transform.position.y * 25);
         if (checkScore > Score)
             Score = checkScore;
+
+        Quaternion characterRotation = Quaternion.Euler(0,0,0);
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            characterRotation.y = 180;
+        }
+
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            characterRotation.y = 0;
+        }
+        transform.localRotation = characterRotation;
     }
 
    

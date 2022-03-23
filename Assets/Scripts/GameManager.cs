@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if (playerTransform.position.y > 0)
+        if (playerTransform.position.y > 70)
         {
             if (playerTransform.position.y > spawnPosition.y - 15)
             {

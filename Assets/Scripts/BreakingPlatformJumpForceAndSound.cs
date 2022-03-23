@@ -26,7 +26,7 @@ public class BreakingPlatformJumpForceAndSound : MonoBehaviour
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb.velocity.y < 0)
             {
-                AudioSource.PlayClipAtPoint(platformSound, transform.position, 0.99f);
+                AudioSource.PlayClipAtPoint(platformSound, transform.position, 1.2f);
                 Vector3 newVelocity = rb.velocity;
                 newVelocity.y = jumpForce;
                 rb.velocity = newVelocity;

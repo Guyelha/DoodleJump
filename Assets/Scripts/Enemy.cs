@@ -9,16 +9,18 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        int highScore = other.GetComponent<PlayerMovement>().Score;
+        if (highScore > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+
         if (other.GetComponent<PlayerMovement>())
         {
-            AudioSource.PlayClipAtPoint(bombSound, transform.position, 0.7f);
+            AudioSource.PlayClipAtPoint(bombSound, transform.position, 0.85f);
 
             FindObjectOfType<GameManager>().LostGame();
-            int highScore = other.GetComponent<PlayerMovement>().Score;
-            if (highScore > PlayerPrefs.GetInt("HighScore"))
-            {
-                PlayerPrefs.SetInt("HighScore:", highScore);
-            }
+          
 
         }
     }
